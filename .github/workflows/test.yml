@@ -19,6 +19,22 @@ jobs:
         with:
           python-version: '3.8'  # Especifica la versión de Python que necesitas
 
-      - name: Ejecutar pruebas
+      - name: Ejecutar pruebas de distancia
         run: |
-          python -m unittest discover -s . -p "test*.py" 
+          python -m unittest testDistancia.py 
+
+      - name: Ejecutar pruebas de factorial
+        run: |
+          python -m unittest testFactorial.py  
+
+      - name: Ejecutar pruebas de máximo
+        run: |
+          python -m unittest testMaximo.py  
+
+      - name: Ejecutar pruebas de primo
+        run: |
+          python -m unittest testPrimo.py  
+
+      - name: Ejecutar pruebas de temperatura
+        run: |
+          python -m unittest testTemperatura.py  
