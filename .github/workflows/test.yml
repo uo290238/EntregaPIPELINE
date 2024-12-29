@@ -27,7 +27,7 @@ jobs:
         run: |
           python -m unittest testFactorial.py  
 
-      - name: Ejecutar pruebas de máximo
+      - name: Ejecutar pruebas de máximo de lista
         run: |
           python -m unittest testMaximo.py  
 
